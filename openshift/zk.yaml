@@ -128,7 +128,7 @@ objects:
       spec:
         containers:
         - name: ${NAME}
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           image: ${SOURCE_IMAGE}:${ZOO_VERSION}
           resources:
             requests:
