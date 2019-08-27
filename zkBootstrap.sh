@@ -48,7 +48,7 @@ for dir in $ZOOCFGDIR $ZK_dataDir $ZK_dataLogDir;do
   else
     # Ensure that we can write on directories (possible persistent volumes)
     echo "Ensuring permission for directory $dir ..."
-    sudo chown -R $ZOO_USER:$ZOO_GROUP $dir
+    #sudo chown -R $ZOO_USER:$ZOO_GROUP $dir
   fi
 done
 
