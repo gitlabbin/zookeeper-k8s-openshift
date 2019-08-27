@@ -42,7 +42,8 @@ RUN addgroup -S -g 1001 $ZOO_GROUP && \
     ln -s $ZOO_HOME/bin/zk_*.sh /usr/bin && \
     echo "${ZOO_USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-USER $ZOO_USER
+#USER $ZOO_USER
+USER ROOT
 
 # Workdir for docker images is the same that ZOOBINDIR env variable for zookeeper process
 WORKDIR $ZOO_HOME/bin/

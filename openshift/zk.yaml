@@ -185,6 +185,3 @@ objects:
               - status
             initialDelaySeconds: 15
             timeoutSeconds: 5
-          securityContext:
-            runAsUser: 1001
-            fsGroup: 1001
